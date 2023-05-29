@@ -1,0 +1,361 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+#hero-container {
+  background-image: url("./assets/mountain-2.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.fluid {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+}
+
+.round-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links ul {
+  display: flex;
+  list-style: none;
+  gap: 4rem;
+}
+
+.nav-links ul li a {
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  border-bottom: 1px solid #fff;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-text {
+  margin: 0;
+  font-size: 8rem;
+  line-height: 1;
+  color: ivory;
+}
+
+.sub-text {
+  margin: 0;
+  font-size: 8.5rem;
+  line-height: 1;
+  color: gold;
+}
+
+#banner {
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.logo-box {
+  display: flex;
+}
+
+.banner-logo-text {
+  margin-left: 1rem;
+}
+
+.logo-main {
+  color: lightslategrey;
+  margin: 0;
+}
+
+.logo-sub {
+  color: darkslateblue;
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.banner-links ul li a {
+  border-bottom: 1px solid darkslateblue;
+  color: darkslateblue;
+  cursor: pointer;
+}
+
+#history {
+  height: 100vh;
+  background-image: url("./assets/mountain-4.jpg");
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info {
+  display: flex;
+  padding-top: 3rem;
+}
+
+.info span {
+  font-size: 9rem;
+  font-weight: 900;
+  line-height: 1;
+  color: aliceblue;
+}
+
+.history-title {
+  align-self: center;
+}
+
+.history-title h4 {
+  margin: 0;
+  font-size: 2rem;
+  color: darkblue;
+}
+
+.history-title div {
+  width: 20px;
+  height: 20px;
+  background-color: aliceblue;
+}
+
+.history-desc {
+  color: #000;
+  line-height: 1.8;
+  margin-left: 5rem;
+}
+
+.overlay {
+  height: 250px;
+  background-color: darkslategray;
+  opacity: 0.6;
+  position: relative;
+}
+
+.slider {
+  height: 70%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  top: 15%;
+}
+
+.slide {
+  width: 25%;
+  height: 100%;
+  position: absolute;
+  transition: all 0.5s;
+}
+
+.slide img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.btn {
+  position: absolute;
+  padding: 5px;
+  border: none;
+  border-radius: 50%;
+  z-index: 20;
+  cursor: pointer;
+  background-color: #fff;
+  font-size: 18px;
+}
+.btn:active {
+  transform: scale(1.1);
+}
+.btn-circle-1 {
+  bottom: 5%;
+  left: 48%;
+}
+
+.btn-circle-2 {
+  bottom: 5%;
+  left: 50%;
+}
+
+.btn-circle-3 {
+  bottom: 5%;
+  left: 52%;
+}
+
+.tabs {
+  background-color: midnightblue;
+  height: 40px;
+}
+
+.tabs .fluid {
+  display: flex;
+  gap: 40px;
+  height: 100%;
+}
+
+.tabs .fluid div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.tabs .fluid div:hover {
+  background-color: aliceblue;
+  color: #000;
+  opacity: 0.6;
+}
+
+.schedule {
+  background-image: url("./assets/mountain-1.jpg");
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.schedule-box-1,
+.schedule-box-2 {
+  position: absolute;
+  top: 20%;
+  padding: 2rem;
+  background-color: aliceblue;
+  width: 400px;
+}
+
+.schedule-box-1 h2,
+.schedule-box-2 h2 {
+  color: midnightblue;
+  line-height: 1;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.dates {
+  margin-top: 10px;
+}
+
+.calendar span {
+  color: #000;
+}
+
+.calendar:nth-child(3) {
+  margin: 20px 0;
+}
+
+.date-desc {
+  margin-left: 40px;
+}
+
+.schedule-box-1 {
+  display: block;
+}
+
+.schedule-box-2 {
+  display: none;
+}
+
+footer {
+  background-color: midnightblue;
+  padding: 1rem;
+}
+
+.footer-sub {
+  color: lightslategrey;
+  margin: 0;
+  font-size: 2.1rem;
+}
+
+.copyright {
+  color: lightslategrey;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+  .main-text,
+  .sub-text {
+    font-size: 6rem;
+  }
+
+  .fluid {
+    width: 100%;
+  }
+}
+
+.schedule-mobile {
+  visibility: hidden;
+}
+
+.accordion-1,
+.accordion-2 {
+  background-color: aliceblue;
+  margin-bottom: 20px;
+  padding: 0.5rem;
+  opacity: 0.8;
+}
+
+.accordion-header {
+  border-bottom: 1px solid midnightblue;
+}
+
+.accordion-description-1,
+.accordion-description-2 {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .main-text,
+  .sub-text {
+    font-size: 4rem;
+  }
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .slide {
+    width: 100%;
+  }
+  .tabs {
+    display: none;
+  }
+  .schedule .fluid {
+    display: none;
+  }
+  .schedule-mobile {
+    visibility: visible;
+    width: 60%;
+  }
+
+  .schedule {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main-text,
+  .sub-text {
+    font-size: 2rem;
+  }
+  .history-desc {
+    margin-left: 1rem;
+  }
+}
